@@ -338,6 +338,11 @@ func (d *hotspotData) String() string {
 	return "<unintrospected JVM>"
 }
 
+const (
+	hotspotMethodCacheSize  = 16 * interpreter.LruFunctionCacheSize
+	hotspotJITInfoCacheSize = 16 * interpreter.LruFunctionCacheSize
+)
+
 // Attach loads to the ebpf program the needed pointers and sizes to unwind given hotspot process.
 // As the hotspot unwinder depends on the native unwinder, a part of the cleanup is done by the
 // process manager and not the corresponding Detach() function of hotspot objects.
@@ -347,17 +352,17 @@ func (d *hotspotData) Attach(_ interpreter.EbpfHandler, _ libpf.PID, bias libpf.
 	// Each function has four symbols: source filename, class name,
 	// method name and signature. However, most of them are shared across
 	// different methods, so assume about 2 unique symbols per function.
-	addrToSymbol, err := freelru.New[libpf.Address, libpf.String](2*interpreter.LruFunctionCacheSize,
+	addrToSymbol, err := freelru.New[libpf.Address, libpf.String](2*hotspotMethodCacheSize,
 		libpf.Address.Hash32)
 	if err != nil {
 		return nil, err
 	}
-	addrToMethod, err := freelru.New[libpf.Address, *hotspotMethod](interpreter.LruFunctionCacheSize,
+	addrToMethod, err := freelru.New[libpf.Address, *hotspotMethod](hotspotMethodCacheSize,
 		libpf.Address.Hash32)
 	if err != nil {
 		return nil, err
 	}
-	addrToJITInfo, err := freelru.New[libpf.Address, *hotspotJITInfo](interpreter.LruFunctionCacheSize,
+	addrToJITInfo, err := freelru.New[libpf.Address, *hotspotJITInfo](hotspotJITInfoCacheSize,
 		libpf.Address.Hash32)
 	if err != nil {
 		return nil, err
