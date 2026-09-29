@@ -1,0 +1,46 @@
+processmanager/types.go
+  s_79a10b9683201a::t_393c10e1b8bead 145-148
+  s_79a10b9683201a::t_d4c8f839f1ac36 23
+collector/internal/samplefilter.go
+  s_79a10b9683201a::t_135f1b8907773b 1-60
+tracer/tracer.go
+  s_79a10b9683201a::t_9fa42186309485 233-235
+  s_79a10b9683201a::t_286e9d37c1dafa 320
+  s_79a10b9683201a::t_a68be5c7569868 1294-1298
+  s_79a10b9683201a::t_a86f7416a64b7a 47
+processmanager/manager.go
+  s_79a10b9683201a::t_c026e369562c17 38
+  s_79a10b9683201a::t_73df2b1184b930 395-399
+  s_79a10b9683201a::t_20fbd4d3b54b88 152
+  s_79a10b9683201a::t_4c974569b212a7 78-80
+internal/controller/config.go
+  s_79a10b9683201a::t_1477966117a531 14,31-34
+  s_79a10b9683201a::t_19657336fbc724 35
+internal/controller/controller.go
+  s_79a10b9683201a::t_f4f2c340cd33a9 107
+samplefilter/filter.go
+  s_79a10b9683201a::t_b00eed6910ffe7 1-26
+collector/internal/controller.go
+  s_79a10b9683201a::t_8d3bb538d41402 101,106,112-122
+  s_79a10b9683201a::t_ff6a9f2ae7047f 38,43
+collector/config/config_linux.go
+  s_79a10b9683201a::t_21c5eb4bdcacd0 77-81
+collector/filter_extension_linux.go
+  s_79a10b9683201a::t_b1a8cf8789af58 1-44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "d713f956c4ac3d5fe25bbc76cbcb51b9da6ea9b9",
+  "prompts": {},
+  "sessions": {
+    "s_79a10b9683201a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "12377df2-67f2-4b89-8a62-906184d6ab83",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "ms-hujia <48512395+ms-hujia@users.noreply.github.com>"
+    }
+  }
+}
