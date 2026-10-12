@@ -1,0 +1,36 @@
+processmanager/skip.go
+  s_3a101af4b8af3c::t_bfcffa31724eff 1-6,9-13,16,22-23,27-30,38-41,46-47,50,74,88-93,96-97,100-101
+  s_3a101af4b8af3c::t_737188bc79a326 7-8,18-19,31-37,42-45,48-49,51-73,75-84,94-95,98-99
+  s_3a101af4b8af3c::t_88bdd5c56ab870 20-21,26
+  s_3a101af4b8af3c::t_37d45e05ad71f5 14-15,17,24-25,85-87
+processmanager/processinfo.go
+  s_3a101af4b8af3c::t_737188bc79a326 617
+  s_3a101af4b8af3c::t_bfcffa31724eff 616,618-624
+  s_3a101af4b8af3c::t_8081b44c52c824 625-626
+processmanager/skip_test.go
+  s_3a101af4b8af3c::t_737188bc79a326 34-44,48-49,59-63
+  s_3a101af4b8af3c::t_6c0a26fc103f18 33,46,55
+  s_3a101af4b8af3c::t_6f2897775e9cdd 1-32,45,47,50-54,56-58,64-70
+processmanager/types.go
+  s_3a101af4b8af3c::t_737188bc79a326 189-191
+tracer/events.go
+  s_3a101af4b8af3c::t_bfcffa31724eff 56
+processmanager/processinfo_test.go
+  s_3a101af4b8af3c::t_f81366407ed01b 76,101-103
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "cd54400e714f564e64d063261c389adb53fbb35e",
+  "prompts": {},
+  "sessions": {
+    "s_3a101af4b8af3c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b10bf85a-aef3-4502-a010-c009701c7334",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "ms-hujia <48512395+ms-hujia@users.noreply.github.com>"
+    }
+  }
+}
