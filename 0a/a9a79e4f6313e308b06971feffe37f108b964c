@@ -1,0 +1,25 @@
+interpreter/hotspot/instance_test.go
+  s_530b89b183c6b3::t_651a8b1c4fd281 10,166
+  s_530b89b183c6b3::t_65b75f60f88403 146-165,167-196
+interpreter/hotspot/instance.go
+  s_530b89b183c6b3::t_0afc49cb28aa5f 809-817
+interpreter/hotspot/stubs.go
+  s_530b89b183c6b3::t_3efac2c0edb3f5 120-121
+  s_530b89b183c6b3::t_0afc49cb28aa5f 62-65,67,118-119
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "0aa9a79e4f6313e308b06971feffe37f108b964c",
+  "prompts": {},
+  "sessions": {
+    "s_530b89b183c6b3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "05c9d2d2-84f2-426f-b761-8659a5c08f08",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "ms-hujia <48512395+ms-hujia@users.noreply.github.com>"
+    }
+  }
+}
