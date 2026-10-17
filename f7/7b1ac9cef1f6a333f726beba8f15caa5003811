@@ -1,0 +1,19 @@
+interpreter/hotspot/instance.go
+  s_530b89b183c6b3::t_89b911e5e72f99 903,906
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "f77b1ac9cef1f6a333f726beba8f15caa5003811",
+  "prompts": {},
+  "sessions": {
+    "s_530b89b183c6b3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "05c9d2d2-84f2-426f-b761-8659a5c08f08",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "ms-hujia <48512395+ms-hujia@users.noreply.github.com>"
+    }
+  }
+}
